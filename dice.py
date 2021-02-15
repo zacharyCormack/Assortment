@@ -1,14 +1,5 @@
 #!/usr/local/bin/python3
 
-'''
-6.
-Write a program to simulate the playing of a simple dice game (played with one
-standard 6-sided die). "Roll" the die to get a value from 1 to 6. This we will
-call your point. Now keep rolling until you get the same value (your point)
-again and see how many rolls it takes. Program it so you can play this game
-repeatedly.
-'''
-
 from random import randrange, choice
 from time import sleep
 
@@ -30,7 +21,7 @@ class Die:
         else:
             return "%dd%02dk%d  "  %(self.n, self.s, self.k)
     
-    def roll(self):
+    def __call__(self):
         rolls = []
         for i in range(self.n):
             rolls.append(randrange(1, self.s + 1))
@@ -62,7 +53,7 @@ dice = [1,2,4,5], [4,6,8,12,20], {1:[1],2:[2],4:[1,3,4],5:[2,4,5]}, [-2,0,2,5,7]
 for i in range(10):
     die = Die(*dice)
     roll = 0
-    until = die.roll()
+    until = die()
     print("\nRolling", die, end="")
     print(" until %2d" %until)
     print("Calculating probability...")
@@ -70,9 +61,7 @@ for i in range(10):
     print("The probability of this roll is %.3f%%" %p)
 
     while roll != until:
-        roll = die.roll()
+        roll = die()
         print("> %02d" %roll)
         sleep(0.3+p/16)
-    sleep(0.3)
-    print("> %02d" %roll)
-    sleep(0.2)
+    sleep(0.5)
