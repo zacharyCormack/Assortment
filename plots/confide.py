@@ -91,7 +91,7 @@ dist  = lambda x: (x, trend(x) + noise(x))
 raw   = [dist(x) for x in sample(list(vals), 250)]
 data  = list(zip(*sorted(raw, key=lambda x: x[0])))
 
-estim = np.poly1d((np.polyfit(data[0], data[1], 2)))
+estim = np.poly1d(np.polyfit(data[0], data[1], 2))
 
 pl_1  = ax1.fill_between(vals, trend(vals) + 1, trend(vals) - 1, alpha=.3)
 pl_2, = ax1.plot(vals, trend(vals), 'r--')

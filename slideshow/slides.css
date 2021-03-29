@@ -1,0 +1,279 @@
+/* "next" and "prev" buttons */
+#prev, #next {
+	position: absolute;
+	cursor: grab;
+	top: 50%;
+	width: auto;
+	padding: 16px;
+	border-color: transparent;
+	color: black;
+	font-weight: bold;
+	font-size: 18px;
+	transition: 0.6s ease;
+	user-select: none;
+}
+
+/* Position the "prev button" to the left */
+#prev {
+	left: 0;
+	border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+#next {
+	right: 0;
+	border-radius: 3px 0 0 3px;
+}
+
+#timer_span {
+	margin: 0 40.5%;
+	padding: 0.5% 0.5%;
+	border-radius: 10px;
+	width: 18%;
+	height: 12px;
+	background-color: lightgray;
+}
+
+#timer_span:hover {
+	background-color: darkgray;
+	cursor: url(ex/stop.png) 25 25, auto;
+}
+
+#timer {
+	width: 0%;
+	height: 100%;
+	border-radius: 5px;
+	background-color: white;
+	text-align: center;
+	font-family: 'Courier New', Courier, monospace;
+	font-size: 8pt;
+}
+
+#speed {
+	-webkit-appearance: none;
+	margin: 0 42.5% 5px;
+	width: 15%;
+	height: 8px;
+	background: gray;
+	outline: none;
+	cursor: ew-resize;
+	opacity: 0.7;
+	-webkit-transition: .5s;
+	transition: opacity .5s;
+	border-radius: 4px;
+}
+
+#speed:hover {
+	opacity: 0.9;
+	height: 10px;
+}
+
+#speed::-webkit-slider-thumb {
+	-webkit-appearance: none;
+  	appearance: none;
+	width:  12px;
+	height: 12px;
+	background: black;
+	border-radius: 4px;
+	cursor: ew-resize;
+}
+
+#speed::-moz-range-thumb {
+	width:  12px;
+	height: 12px;
+	background: black;
+	cursor: ew-resize;
+	border-radius: 4px;
+}
+
+#speed:hover::-webkit-slider-thumb {
+	width:  14px;
+	height: 14px;
+	cursor: ew-resize;
+}
+
+#speed:hover::-moz-range-thumb {
+	width:  14px;
+	height: 14px;
+	cursor: ew-resize;
+}
+
+#speed:hover::-webkit-slider-thumb {
+	opacity: 1;
+	cursor: none;
+}
+
+#speed:hover::-moz-range-thumb {
+	opacity: 1;
+	cursor: none;
+}
+
+/* figure containing dots, and its caption */
+#dots, #dots figcaption {
+	cursor: default;
+	text-align: center;
+	font-family: 'Courier New', Courier, monospace;
+	background-color: transparent;
+}
+
+#dots figcaption em {
+	border-radius: 40%;
+	padding: 2px 3px 2px 3px;
+	background-color: lightgray;
+	cursor: context-menu;
+}
+
+.dot {
+	cursor: none;
+	height: 15px;
+	width: 15px;
+	margin: 0 2px;
+	background-color: rgba(0,0,0,0.4);
+	border-radius: 50%;
+	border-color: transparent;
+	display: inline-block;
+	top: 50%;
+	transition: background-color 0.6s ease;
+}
+
+.slides {
+	animation-name: fade;
+	animation-duration: 0.4s;
+	cursor: url(ex/stop.png) 25 25, auto;
+}
+
+.slides figcaption {
+	color: #111;
+	font-size: 11px;
+	font-family: Consolas, 'Courier New', Courier, monospace;
+	top: 10;
+	left: 80%;
+	padding: 8px 12px;
+	position: absolute;
+}
+
+.active, button:hover {
+	background-color: rgba(0,0,0,0.6);
+}
+
+button:active {
+	outline: none;
+	background-color: rgba(0,0,0,0.85);
+	cursor: grabbing !important;
+}
+
+iframe, img {
+	margin: 5px;
+	padding: 1px;
+	border-width: 1mm;
+	border-style: double solid;
+	border-color: slategray lightsteelblue lightsteelblue gray;
+}
+
+iframe body {
+	font-family: "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif;
+	font-size: 220%;
+	padding: 0 26px;
+	line-height: 22px;
+	word-wrap: break-word;
+}
+
+h1 {
+	font-size: 32pt;
+	font-family: "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif;
+	line-height: 1.2;
+	font-weight: normal;
+	text-align: center;
+}
+
+hr {
+	margin: 10px 25% 5px;
+	height: 3px;
+	border-width: 3px 0px 1px;
+	border-radius: 3px 3px;
+	border-style: double none solid;
+	border-color: gray transparent black;
+	background-color: darkgray;
+	left: 25%;
+	width: 50%;
+}
+
+blockquote {
+	font-size: 250%;
+	font-family: 'Snell Roundhand', cursive;
+	margin: 0 7px 0 5px;
+	padding: 48px 16px 8px 20px;
+	border-radius: 0 25px 25px 0;
+	border-left-width: 5px;
+	border-left-style: solid;
+	background: rgba(127, 127, 127, 0.1);
+	border-color: rgba(0, 122, 204, 0.5);
+	quotes:"\201C""\201D""\2018""\2019";
+}
+
+blockquote:before {
+	color: #ccc;
+	content: open-quote;
+	font-size: 40pt;
+	line-height: 1.6pt;
+	margin-right: 2pt;
+	vertical-align: -2.4pt;
+}
+
+blockquote:after {
+	color: #ccc;
+	content: close-quote;
+	font-size: 40pt;
+	line-height: 0.8pt;
+	margin-right: 2pt;
+	vertical-align: -4pt;
+}
+
+figure {
+	text-align: center;
+	align-items: center;
+}
+
+figcaption {
+	text-align: center;
+	padding: 5px 3px;
+	cursor: auto;
+	font-size: 100%;
+}
+
+code {
+	background-color: #eee;
+	border-radius: 3px;
+	padding: 0 3px;
+}
+
+q:before {
+	content: open-quote;
+}
+
+q:after {
+	content: close-quote;
+}
+
+q {
+	font-style: italic;
+}
+
+audio {
+	width: 40%;
+	margin: 1% 30%;
+}
+
+@-webkit-keyframes fade {
+	from {opacity: .4} 
+	to {opacity: 1}
+}
+
+@keyframes fade {
+	from {opacity: .4} 
+	to {opacity: 1}
+}
+
+@media only screen and (max-width: 300px) {
+	a, p {font-size: 11px}
+}

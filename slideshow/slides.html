@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<link rel="stylesheet" type="text/css" href="./slides.css"/>
+</head>
+<body>
+	<h1>EXAMPLE IMAGE REEL</h1>
+
+	<button id="prev" onclick="plus_slides(-1)">&#x25C0;</button>
+	
+	<hr>
+
+	<figure class="slides" style="display: none;" onclick="toggle_timing()">
+		<img src="./ex/book.svg"       width="1000" height="700"/>
+		<figcaption><code>book.svg</code></figcaption>
+	</figure>
+
+	<figure class="slides" style="display: none;" onclick="toggle_timing()">
+		<img src="./ex/books.svg"      width="1000" height="700"/>
+		<figcaption><code>books.svg</code></figcaption>
+	</figure>
+
+	<figure class="slides" style="display: none;" onclick="toggle_timing()">
+		<img src="./ex/chalkboard.svg" width="1000" height="700"/>
+		<figcaption><code>chalkboard.svg</code></figcaption>
+	</figure>
+
+	<figure class="slides" style="display: none;" onclick="toggle_timing()">
+		<img src="./ex/compasses.svg"  width="1000" height="700"/>
+		<figcaption><code>compasses.svg</code></figcaption>
+	</figure>
+
+	<figure class="slides" style="display: none;" onclick="toggle_timing()">
+		<img src="./ex/desk.svg"       width="1000" height="700"/>
+		<figcaption><code>desk.svg</code></figcaption>
+	</figure>
+
+	<figure class="slides" style="display: none;" onclick="toggle_timing()">
+		<img src="./ex/earth.svg"      width="1000" height="700"/>
+		<figcaption><code>earth.svg</code></figcaption>
+	</figure>
+
+	<figure class="slides" style="display: none;" onclick="toggle_timing()">
+		<img src="./ex/globe.svg"      width="1000" height="700"/>
+		<figcaption><code>globe.svg</code></figcaption>
+	</figure>
+
+	<figure class="slides" style="display: none;" onclick="toggle_timing()">
+		<img src="./ex/microscope.svg" width="1000" height="700"/>
+		<figcaption><code>microscope.svg</code></figcaption>
+	</figure>
+
+	<figure class="slides" style="display: none;" onclick="toggle_timing()">
+		<img src="./ex/spring.svg"     width="1000" height="700"/>
+		<figcaption><code>spring.svg</code></figcaption>
+	</figure>
+
+	<figure class="slides" style="display: none;" onclick="toggle_timing()">
+		<img src="./ex/stop.svg"     width="1000" height="700"/>
+		<figcaption><code>stop.svg</code></figcaption>
+	</figure>
+
+	<hr>
+
+	<input type="range" min="-200" max="200" value="0" id="speed"/>
+
+	<button id="next" onclick="plus_slides(1)">&#x25B6;</button>
+
+	<div id="timer_span" onclick="toggle_timing()">
+		<div id="timer"></div>
+	</div>
+
+	<figure id="dots">
+		<button class="dot" onclick="current_slide(1)"></button>
+		<button class="dot" onclick="current_slide(2)"></button>
+		<button class="dot" onclick="current_slide(3)"></button>
+		<button class="dot" onclick="current_slide(4)"></button>
+		<button class="dot" onclick="current_slide(5)"></button>
+		<button class="dot" onclick="current_slide(6)"></button>
+		<button class="dot" onclick="current_slide(7)"></button>
+		<button class="dot" onclick="current_slide(8)"></button>
+		<button class="dot" onclick="current_slide(9)"></button>
+		<button class="dot" onclick="current_slide(10)"></button>
+		<figcaption><em><strong id="slidenum"></strong>/<strong>10</strong></em></figcaption>
+	</figure>
+
+	<script src="./slides.js">
+		
+	</script>
+</body>
+</html>

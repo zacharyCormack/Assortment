@@ -1,0 +1,20 @@
+<!DOCTYPE svg>
+<svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="200px" height="200px" viewBox="0 0 200 200" preserveAspectRatio="xMidYMid meet">
+	<filter id="blur">
+		<feGaussianBlur in="SourceGraphic" stdDeviation="0.3"/>
+	</filter>
+	<g filter="url(#blur)">
+		<ellipse cx="22" cy="22" rx="18" ry="5" transform="rotate(-45 22 22)" fill="#CCFFFF" stroke="none"/>
+		<g fill="none" stroke="#5B443E" stroke-width="11">
+			<path d="M 40,57.5 Q 20,77.5 40,100"/>
+		</g>
+		<g fill="#5B443E" stroke="beige" stroke-width="3">
+			<polygon points="35,10 10,35 70,80 80,70"/>
+			<path d="M 25,105 A 40,20 0,0,1 60,95 l 55,0 A 20,25 0,0,1 120,115 l -90,0 z"/>
+		</g>
+		<g fill="#CCFFFF" stroke="none">
+			<ellipse cx="75" cy="75" rx="8" ry="4" transform="rotate(-45 75 75)"/>
+			<rect x="70" y="90" width="35" height="4"/>
+		</g>
+	</g>
+</svg>

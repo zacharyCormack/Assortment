@@ -1,0 +1,154 @@
+<svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="1300px" height="700px" viewBox="-1 -1 13 7">
+<circle cx="2.5" cy="2.5" r="3" fill="white" stroke="black" stroke-width="0.3"/>
+
+<symbol id="RI" viewBox="0 0 5 7" height=".8">
+	<polygon points="1,2 1.3,1 3.7,1 4,2 3,2 3,5 4,5 3.7,6 1.3,6 1,5 2,5 2,2"/>
+</symbol>
+
+<symbol id="RV" viewBox="0 0 6 7" height=".8"> 
+	<polygon points="0.5,2 0.8,1 5.2,1 5.5,2 4.5,2 3.5,5 4.8,5 4.5,6 1.5,6 1.2,5 2.5,5 1.5,2"/>
+	<polygon points="2.5,2 3.5,2 3,4" fill="white"/>
+</symbol>
+
+<symbol id="RX" viewBox="0 0 6 7" height=".8"> 
+	<polygon points="0.5,2 0.8,1 5.2,1 5.5,2 4.5,2 3.6,3.5 4.5,5 5.5,5 5.2,6 0.8,6 0.5,5 1.5,5 2.4,3.5 1.5,2"/>
+	<polygon points="2.5,2 3.5,2 3,3" fill="white"/>
+	<polygon points="2.5,5 3.5,5 3,4" fill="white"/>
+</symbol>
+
+<symbol id="ticks" viewBox="0 0 6 2" width="1.67">
+	<circle cx="1" cy="1" r="0.3"/>
+	<circle cx="2" cy="1" r="0.2"/>
+	<circle cx="3" cy="1" r="0.2"/>
+	<circle cx="4" cy="1" r="0.2"/>
+	<circle cx="5" cy="1" r="0.2"/>
+</symbol>
+
+<g>
+	<use href="#RI" x="-4" transform="rotate(30,2.5,2.5)"/>
+	<g transform="rotate(60,2.5,2.5)">
+		<use href="#RI" x="-4.1"/>
+		<use href="#RI" x="-3.9"/>
+	</g>
+	<g transform="rotate(90,2.5,2.5)">
+		<use href="#RI" x="-4.2"/>
+		<use href="#RI" x="-4.0"/>
+		<use href="#RI" x="-3.8"/>
+	</g>
+	<g transform="rotate(120,2.5,2.5)">
+		<use href="#RI" x="-4.1"/>
+		<use href="#RV" x="-3.8"/>
+	</g>
+	<use href="#RV" x="-4" transform="rotate(150,2.5,2.5)"/>
+	<g transform="rotate(180,2.5,2.5)">
+		<use href="#RV" x="-4.2"/>
+		<use href="#RI" x="-3.9"/>
+	</g>
+	<g transform="rotate(210,2.5,2.5)">
+		<use href="#RV" x="-4.3"/>
+		<use href="#RI" x="-4.0"/>
+		<use href="#romanI" x="-3.8"/>
+	</g>
+	<g transform="rotate(240,2.5,2.5)">
+		<use href="#RV" x="-4.4"/>
+		<use href="#RI" x="-4.1"/>
+		<use href="#RI" x="-3.9"/>
+		<use href="#RI" x="-3.7"/>
+	</g>
+	<g transform="rotate(270,2.5,2.5)">
+		<use href="#RI" x="-4.1"/>
+		<use href="#RX" x="-3.8"/>
+	</g>
+	<use href="#RX" x="-4" transform="rotate(300,2.5,2.5)"/>
+	<g transform="rotate(330,2.5,2.5)">
+		<use href="#RX" x="-4.2"/>
+		<use href="#RI" x="-3.9"/>
+	</g>
+	<use href="#RX" x="-4.3"/>
+	<use href="#RI" x="-4.0"/>
+	<use href="#RI" x="-3.8"/>
+</g>
+
+<use href="#ticks" x="1.5" y="-3.6" transform="rotate(15,2.5,2.5)"/>
+<use href="#ticks" x="1.5" y="-3.6" transform="rotate(45,2.5,2.5)"/>
+<use href="#ticks" x="1.5" y="-3.6" transform="rotate(75,2.5,2.5)"/>
+<use href="#ticks" x="1.5" y="-3.6" transform="rotate(105,2.5,2.5)"/>
+<use href="#ticks" x="1.5" y="-3.6" transform="rotate(135,2.5,2.5)"/>
+<use href="#ticks" x="1.5" y="-3.6" transform="rotate(165,2.5,2.5)"/>
+<use href="#ticks" x="1.5" y="-3.6" transform="rotate(195,2.5,2.5)"/>
+<use href="#ticks" x="1.5" y="-3.6" transform="rotate(225,2.5,2.5)"/>
+<use href="#ticks" x="1.5" y="-3.6" transform="rotate(255,2.5,2.5)"/>
+<use href="#ticks" x="1.5" y="-3.6" transform="rotate(285,2.5,2.5)"/>
+<use href="#ticks" x="1.5" y="-3.6" transform="rotate(315,2.5,2.5)"/>
+<use href="#ticks" x="1.5" y="-3.6" transform="rotate(345,2.5,2.5)"/>
+
+<path id="rim" d="M 2.5,0.2 A 1.3,1.3 0,0,0 2.5,0.2 Z" fill="none" stroke="red"/>
+
+<g fill="black" stroke="#333" stroke-width="0.1">
+	<circle cx="2.5" cy="2.5" r="0.3"/>
+	<circle cx="2.5" cy="2.5" r="0.2" stroke-opacity="0.4"/>
+
+	<path d="M 2.5,2.5 2.4,2.4 Q 2.3,2.3 2.4,2 2.5,1.8 2.2,1.2 L 2.5,1 2.8,1.2 Q 2.5,1.8 2.6,2 2.7,2.3 2.6,2.4 Z" fill="black">
+		<animateTransform type="rotate"
+			from="0 2.5 2.5"
+			to="360 2.5 2.5"
+			attributeName="transform"
+			dur="86400s"
+			repeatCount="indefinite"/>
+	</path>
+
+	<path d="M 2.5,2.5 2.45,2.3 Q 2.4,2.3 2.3,2.1 2.5,2 2.3,1.5 L 2.4,1 Q 2.1,1.2 2.5 0.6 2.9,1.2 2.6,1 L 2.6,1 2.7,1.5 Q 2.5,2 2.7,2.1 2.6,2.3 2.55,2.3 Z" fill="black">
+		<animateTransform type="rotate"
+			from="0 2.5 2.5"
+			to="360 2.5 2.5"
+			attributeName="transform"
+			dur="3600s"
+			repeatCount="indefinite"/>
+	</path>
+
+	<line x1="2.5" x2="2.5" y1="0.5" y2="2.6">
+		<animateTransform type="rotate"
+			from="0 2.5 2.5"
+			to="360 2.5 2.5"
+			attributeName="transform"
+			dur="60s"
+			repeatCount="indefinite"/>
+	</line>
+</g>
+
+<mask id="glass">
+	<rect x="0" y="0" width="5" height="5"/>
+	<circle cx="2.5" cy="1.9" r="0.42" fill="white"/>
+	<circle cx="2.5" cy="3.1" r="0.42" fill="white"/>
+	<polygon points="2.19,2.17 2.81,2.17 2.19,2.83 2.81,2.83" fill="white" stroke-width="0.01" stroke="white"/>
+</mask>
+
+<g fill="#F4A560" stroke-width="0.01" transform="scale(2.5) translate(1,-1.5)">
+	<line x1="2.5" x2="2.5" y1="1.3" y2="1.5" stroke="black" stroke-width="0.1"/>
+	<line x1="2.5" x2="2.5" y1="3.5" y2="3.7" stroke="black" stroke-width="0.1"/>
+	<rect x="0" y="0" width="5" height="5"
+		fill="lightgray" mask="url(#glass)"/>
+
+	<rect x="1.5" y="2.5" width="2" height="1.2" mask="url(#glass)">
+		<animate begin="0s;flip.end" attributeName="y" values="1.3;2.5" dur="86350s"/>
+		<animate id="drain" begin="0s;flip.end" attributeName="height" values="1.2;0" dur="86350s"/>
+	</rect>
+	<line x1="2.5" x2="2.5" y1="2.55" y2="3.5" stroke="sandybrown"
+		stroke-dasharray="0.01 0.05" stroke-linecap="round">
+		<animate id="fall" begin="0s;flip.end" attributeName="y2" values="2.55;3.5" dur="3s"/>
+		<animate begin="0s;flip.end" attributeName="stroke-dashoffset" values="0.11;0" dur="0.35s" repeatCount="indefinite"/>
+	</line>
+	<polygon mask="url(#glass)">
+		<animate begin="fall.end" attributeName="points" values="2.5,3.52 2.5,3.52 2.5,3.52;1.3,3.52 3.7,3.52 2.5,2.5" dur="86349s"/>
+	</polygon>
+	<rect x="1.9" y="1.2" width="1.2" height="0.2" fill="darkgray"/>
+	<rect x="1.9" y="3.6" width="1.2" height="0.2" fill="darkgray"/>
+	<line x1="2" x2="2" y1="1.3" y2="3.7" stroke="black" stroke-width=".1"/>
+	<line x1="3" x2="3" y1="1.3" y2="3.7" stroke="black" stroke-width=".1"/>
+	<animateTransform id="flip" begin="drain.end" type="rotate"
+		from="0 2.5 2.5"
+		to="180 2.5 2.5"
+		attributeName="transform"
+		dur="47s"/>
+</g>
+</svg>

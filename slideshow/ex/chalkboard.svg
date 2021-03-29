@@ -1,0 +1,41 @@
+<!DOCTYPE svg>
+<svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="400px" height="350px" viewBox="0 0 4 3.5">
+	<style>
+		text {
+			font-size: 2%;
+			font-family: cursive;
+		}
+		.equation {
+			font-size: 4%;
+			font-family: Luminari, cursive;
+		}
+		#sub {
+			font-size: 3%;
+		}
+	</style>
+	<filter id="blur">
+		<feGaussianBlur in="SourceGraphic" stdDeviation="0.006"/>
+	</filter>
+	<g filter="url(#blur)" fill="black">
+		<g stroke="burlywood" stroke-width="0.3">
+			<line x1="1" x2="1" y1="2.5" y2="3.2"/>
+			<line x1="3" x2="3" y1="2.5" y2="3.2"/>
+			<circle cx="1" cy="3" r="0.1"/>
+			<circle cx="3" cy="3" r="0.1"/>
+			<rect x="0.5" y="0.5" width="3" height="2" rx="0.4"/>
+		</g>
+		<svg x="2.5" y="0.5" width="0.67" height="1" viewBox="0 0 20 30" fill="gainsboro" stroke="gainsboro">
+			<path stroke-width="1.6" d="M 15,25 Q 5,25 5,23 M 15,21 Q 5,21 5,19 M 15,17 Q 5,17 5,15"/>
+			<path stroke-width="1.6" d="M 5,23 Q 5,21 15,21 M 5,19 Q 5,17 15,17 M 5,15 Q 5,13 15,13"/>
+			<polygon points="2,28 18,28 15,25 5,25"/>
+			<polygon points="2,10 18,10 15,13 5,13"/>
+		</svg>
+		<g fill="gainsboro" font-style="oblique">
+			<text x="1" y="1.05">Hooke's Law:</text>
+			<text class="equation" x="0.85" y="1.9">F</text>
+			<text class="equation" x="1.4" y="1.9">= -kx</text>
+			<text class="equation" id="sub" x="1.15" y="2">s</text>
+		</g>
+		<rect fill="none" stroke="saddlebrown" stroke-linecap="round" stroke-dasharray="0.55,0.2,0.3,0.16" stroke-width="0.1" x="0.5" y="0.5" width="3" height="2" rx="0.4"/>
+	</g>
+</svg>
